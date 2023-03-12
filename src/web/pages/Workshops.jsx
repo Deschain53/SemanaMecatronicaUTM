@@ -1,12 +1,10 @@
 import { Typography } from "@mui/material"
 import { WebLayout } from "../layout/WebLayout"
 
-export const HomePage = () => {
+export const Workshops = () => {
   return (
     <WebLayout>
-      <Typography>
-        HomePage
-      </Typography>
+      <Typography>Talleres</Typography>
     </WebLayout>
   )
 }

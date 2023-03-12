@@ -1,11 +1,11 @@
 import { Typography } from "@mui/material"
 import { WebLayout } from "../layout/WebLayout"
 
-export const HomePage = () => {
+export const Contest = () => {
   return (
     <WebLayout>
       <Typography>
-        HomePage
+        Concurso
       </Typography>
     </WebLayout>
   )
