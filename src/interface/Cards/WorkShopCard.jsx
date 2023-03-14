@@ -8,7 +8,8 @@ import Button from '@mui/material/Button';
 import styled from '@emotion/styled';
 import { SimpleList } from '../Lists/SimpleList';
 import { SubsectionCard } from '../Typo/SubsectionCard';
-
+import GroupIcon from '@mui/icons-material/Group';
+import { boxSX } from '../../theme/hoverTheme';
 
 const tituloD     = "Titulo del taller"
 const objetivoD   = "Este es un texto por defaul, el verdadero objetivo del taller debera ser reemplazado aqui. Este texto un solo una muestra para mostrar como se comportaria el componente en la pagina we"
@@ -16,7 +17,7 @@ const contenidoD  = ["Contenido 1 para taller","Contenido 2 taller", "Contenido 
 const requisitosD = ["Conocimiento en lenguaje X", "Manejo de paqueteria Y", "Uso de herramienta Z"]
 const instructorD = "Nombre del instructor"
 const lugarD      = "Sala de computo X"
-
+const maxD = 20
 
 const StyledCard = styled(Card)({
   [`& .${outlinedInputClasses.root} .${outlinedInputClasses.notchedOutline}`]: {
@@ -35,11 +36,11 @@ const StyledCard = styled(Card)({
 
 export const WorkShopCard = ({
         taller={titulo:tituloD, objetivo:objetivoD, contenido:contenidoD, requisitos:requisitosD, 
-        instructor:instructorD, lugar:lugarD, maxParticipantes:10}
+        instructor:instructorD, lugar:lugarD, max:maxD}
     }) => {
   return (
-    <>
-    <StyledCard sx={{ minWidth: 275, m:1 }} variant="outlined">
+    <Box sx={boxSX}>
+    <StyledCard sx={{ minWidth: 275, m:1 }} variant="outlined" >
       <CardContent>
 
         <Grid container> 
@@ -48,12 +49,18 @@ export const WorkShopCard = ({
               <Typography sx={{ fontSize: 16 }} color="grey" gutterBottom>
                 {taller.instructor}
               </Typography>
-              <Typography variant="h5" component="div">
+              <Typography variant="h6" component="div" >
                 {taller.titulo}
               </Typography>
-              <Typography sx={{ fontSize: 12,mb: 1.2, mt:0 }} color="text.secondary">
+              <Typography sx={{ fontSize: 13,mb: 1.2, mt:0.8 }} color="text.secondary">
                 {taller.lugar}
               </Typography>
+              <Grid container>
+                <GroupIcon fontSize='20'/>
+                <Typography sx={{ fontSize: 12,pl:1, fontWeight:700 }} color="grey" gutterBottom>
+                {taller.max} máximo
+              </Typography>
+              </Grid>
             </Box>
           </Grid>
           {
@@ -63,7 +70,7 @@ export const WorkShopCard = ({
         </Grid>
 
 
-        <Box  >
+        <Box  sx={{mt:1}}>
           <SubsectionCard texto='Objetivo'/>
           <Typography align='justify' variant='body2'>
             {taller.objetivo}
@@ -83,7 +90,7 @@ export const WorkShopCard = ({
       </CardContent>
 
     </StyledCard>
-    </>
+    </Box>
   )
 }
 

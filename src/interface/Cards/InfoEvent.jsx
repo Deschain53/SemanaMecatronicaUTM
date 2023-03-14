@@ -1,11 +1,15 @@
-import { Box, Grid, Typography } from '@mui/material'
+import { Box, Grid, IconButton, Typography, Card } from '@mui/material'
 import React from 'react'
 import GroupsIcon from '@mui/icons-material/Groups';
+import { Link } from 'react-router-dom';
 
 const eventDescripcionD = "El 10º Concurso de Minirobótica, en donde los participantes podrán integrar conocimiento y habilidades, de manera divertida, creativa e innovadora."
 
-export const InfoEvent = ({Icon = GroupsIcon, title = 'Conferencias', description = eventDescripcionD }) => {
+import { boxSX } from '../../theme/hoverTheme'; 
+
+export const InfoEvent = ({Icon = GroupsIcon, title = 'Conferencias', description = eventDescripcionD, link='' }) => {
   return (
+  <Box sx={boxSX}>
     <Grid container sx={{pl:2,pr:2,pb:2}} spacing={2}  >
       <Grid item xs={4} sm={3} md={12} lg={12} >
           <Grid
@@ -15,9 +19,11 @@ export const InfoEvent = ({Icon = GroupsIcon, title = 'Conferencias', descriptio
             alignItems="center"
             justifyContent="center"
             //sx={{paddingRight:5}}
-          >
-            <Icon sx={{ fontSize: 100}} color='black'/> 
-            <Typography variant="h6" color='primary' sx={{ fontWeight:'600' }}> 
+            >
+            <IconButton href={link} LinkComponent={Link} to={link}>
+              <Icon sx={{ fontSize: 100}} color='black'/> 
+            </IconButton>
+            <Typography variant="h6" color='primary' sx={{ fontWeight:'600' }} > 
                   {title} 
             </Typography> 
           </Grid>
@@ -28,5 +34,6 @@ export const InfoEvent = ({Icon = GroupsIcon, title = 'Conferencias', descriptio
           </Typography>
       </Grid>
     </Grid>
+  </Box>
   )
 }

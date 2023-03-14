@@ -17,15 +17,37 @@ const listTalleres = [
   {item:inscripcion, link: ''}
 ]
 
-const createTaller = (tituloD='', objetivoD='', contenidoD=[''], requisitosD=[''], instructorD='', lugarD='' ) => {
-  return {tituloD, objetivoD, contenidoD, requisitosD, instructorD, lugarD,} 
+
+//Informacion de talleres a detalle
+const createTaller = (tituloD='', objetivoD='', contenidoD=[''], requisitosD=[''], instructorD='', lugarD='', max=20 ) => {
+  return {titulo:tituloD, objetivo:objetivoD, contenido:contenidoD, requisitos:requisitosD, instructor:instructorD, lugar:lugarD,max} 
 }
 
 const talleresList = [
-  createTaller(),
-  createTaller(),
+  createTaller(
+    'DISEÑO Y ANÁLISIS DE SISTEMAS MECÁNICOS Y ROBÓTICOS UTILIZANDO EL PROGRAMA MSC ADAMS VIEW',
+    ' El participante aprenda a utilizar el software ADAMS View™ con el objetivo de diseñar y simular la cinemática y dinámica de sistemas mecánicos y robóticos. Este programa es compatible con Matlab® y Solidworks® entre otros, lo cual permite importar y exportar datos para realizar los análisis necesarios.',
+    [
+      'Introducción de ADAMS View™',
+      'Construcción de un mecanismo',
+      'Simulación del mecanismo',
+      'Ploteo de resultados',
+      'Creación de medidas',
+      'Exportación e importación de datos',
+      'Creación general de restricciones',
+      'Co-simulación ADAMS-Matlab',
+    ],
+    [
+      'Conocimiento del software SolidWorks',
+      'Manejo de lectura en inglés'
+    ],
+    ' Dra. Esther Lugo González',
+    ' Sala de cómputo 1',
+    20
+  ),
   createTaller(),
 ] 
+
 
 export const Workshops = () => {
   return (
@@ -46,7 +68,7 @@ export const Workshops = () => {
           {
             talleresList.map( (taller) => {
               return(
-                <WorkShopCard />
+                <WorkShopCard taller={taller}/>
                 
                 )
               })
