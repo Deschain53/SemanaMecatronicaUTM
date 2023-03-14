@@ -1,12 +1,13 @@
-import { Typography } from "@mui/material"
+import { Grid, Typography } from "@mui/material"
 import { Schedule } from "../../interface/Schedule/Schedule"
+import { TitleSection } from "../../interface/Typo/TitleSection";
 import { WebLayout } from "../layout/WebLayout"
 
 function createData(horario = '9:00', autor, titulo, universidad ) {
   return { horario, autor, titulo, universidad };
 }
 
-const introduccionConferencias = "Se realizarán los días 25 y 26 de abril y se llevarán a cabo en el Auditorio de la Universidad Tecnológica de la Mixteca. El acceso a las mismas "
+const introduccionConferencias = "Se realizarán los días 26 y 27 de abril y se llevarán a cabo en el Auditorio de la Universidad Tecnológica de la Mixteca. El acceso a las mismas "
 const accesoSinCosto = 'NO TIENE COSTO.';
 
 const conferenciasDia1 = [
@@ -30,11 +31,34 @@ export const Conferences = () => {
   return (
     <>
     <WebLayout/>
-      <Typography variant="h3">Conferencias</Typography>
-      <Typography>{introduccionConferencias}</Typography>
-      <Typography>{accesoSinCosto}</Typography>
-      <Schedule titulo='Horario' infoConferencias = {infoConferencias}/> 
+    <Grid container> 
+      <Grid item direction="column" xs={12} sm={12} md={12} lg={3}></Grid>
+      <Grid item direction="column" xs={12} sm={12} md={12} lg={6}>
+
+        <TitleSection text='Conferencias' />
+        <Typography sx={{mt:1}}>{introduccionConferencias}</Typography>
+        <Typography>{accesoSinCosto}</Typography>
+
+        <Schedule titulo='Horario' infoConferencias = {infoConferencias}/> 
+
+      </Grid>
+      <Grid item direction="column" xs={12} sm={12} md={12} lg={3}></Grid>
+    </Grid>
+
     </>
     
   )
 }
+ 
+/*
+
+    <Grid container> 
+      <Grid item direction="column" xs={12} sm={12} md={12} lg={1}></Grid>
+      <Grid item direction="column" xs={12} sm={12} md={12} lg={10}>
+
+
+      </Grid>
+      <Grid item direction="column" xs={12} sm={12} md={12} lg={1}></Grid>
+    </Grid>
+      
+*/

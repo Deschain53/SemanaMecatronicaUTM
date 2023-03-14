@@ -3,6 +3,7 @@ import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 import {EventoList} from './EventoList'
 import Typography from '@mui/material/Typography';
+import { Subsection } from '../Typo/Subsection';
 
 
 
@@ -13,17 +14,15 @@ export const Schedule = ({titulo = 'Horario', infoConferencias = []}) => {
   return (
     <>
     <div>
-        <Typography 
-            variant="h4"
-            sx={{paddingLeft:2, paddingTop:2}}
-            >{titulo}</Typography>
+
+        <Subsection text={titulo}/>
         <Divider />
     </div>
       <Grid  container spacing={1.5} sx={{paddingLeft:1, paddingRight:1}}>
         {infoConferencias.map(({fecha,conferencias}) => {
           return(
-            <Grid item  xs={12}  sm={12}  md={6}  lg={6} > <
-              EventoList fecha = {fecha} eventos = {conferencias}/>  
+            <Grid item  xs={12}  sm={12}  md={12}  lg={12} > 
+              <EventoList fecha = {fecha} eventos = {conferencias}/>  
             </Grid>
           )
         })}

@@ -34,16 +34,16 @@ export const HomePage = () => {
         {/*Informacion*/}
         <Grid item sm={12} xs={12} md={6} lg={8} xl={6}>
           <Box container sx={{paddingTop:2}}>
-            <Typography variant='h6' >{invitacion}</Typography>
+            <Typography variant='body' >{invitacion}</Typography>
             <Grid 
               container
               spacing={0}
               direction="column"
               alignItems="center"
               justifyContent="center">
-              <Typography variant='h5' color='primary' sx={{fontWeight:'700'}} >{titleSemana}</Typography>
+              <Typography variant='h5' color='primary' sx={{fontWeight:'700',mt:1,mb:1}} >{titleSemana}</Typography>
             </Grid>
-            <Typography variant='h6'>{inter1}</Typography>
+            <Typography variant='body'>{inter1}</Typography>
             {
               /* 
               <Typography>{fecha}</Typography>
@@ -62,7 +62,7 @@ export const HomePage = () => {
 
       </Grid>
 
-      <Grid container sx={{padding:1}} spacing={4} >
+      <Grid container sx={{pr:1,pl:1}} spacing={4} >
           <Grid item sx={12} sm={12} md={4} lg={4} xl={4}>
             <InfoEvent 
               Icon = {GroupsIcon}

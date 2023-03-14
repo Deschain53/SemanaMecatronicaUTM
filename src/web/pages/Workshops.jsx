@@ -36,7 +36,14 @@ export const Workshops = () => {
         <SimpleList list={listTalleres} fS='1em'/>
 
         <Box sx={{pt:2}}>
-          <WorkShopCard />
+          {
+            talleresList.map( (taller) => {
+              return(
+                <WorkShopCard />
+                
+                )
+              })
+          }
         </Box>
       
       </Grid>
