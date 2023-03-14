@@ -16,18 +16,18 @@ export const Evento = ({eventoObject}) => {
               </Typography>
             </TableCell>
             <TableCell sx={{borderBottom:'0', paddingBottom:0}}>
-              {eventoObject.numeroIcono /*SUSTITUIR iconos[numeroIcono] */}
+                {eventoObject.autor} 
               </TableCell>
             <TableCell sx={{borderBottom:'0', paddingBottom:0}}>
               <Typography sx={{fontSize:'0.8em'}}> 
-                {eventoObject.autor} 
+                {eventoObject.universidad }
               </Typography>
             </TableCell>
         </TableRow>
         <TableRow key={eventoObject.name}>
-            <TableCell sx={{borderBottom:'0', paddingBottom:1, paddingTop:0}} colSpan={2}></TableCell>
-            <TableCell sx={{borderBottom:'0', paddingBottom:1, paddingTop:0}} >
-            <Typography sx={{ fontSize:'1.2em'}}> 
+            <TableCell sx={{borderBottom:'0', paddingBottom:1, paddingTop:0}} ></TableCell>
+            <TableCell sx={{borderBottom:'0', paddingBottom:1, paddingTop:0}} colSpan={2}>
+              <Typography sx={{ fontSize:'1.2em'}}> 
                 {eventoObject.titulo} 
               </Typography>
             </TableCell>

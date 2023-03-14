@@ -9,17 +9,17 @@ import TableCell from '@mui/material/TableCell';
 import { Evento } from './Evento';
 import Typography from '@mui/material/Typography';
 
-function createData(horario = '9:00', autor, titulo, numeroIcono) {
-  return { horario, autor, titulo, numeroIcono};
+function createData(horario = '9:00', autor, titulo, universidad ) {
+  return { horario, autor, titulo, universidad };
 }
 
 const rows = [
-  createData('9:30' , 'Nombre de autor 1', 'Titulo de conferencia/taller/Concurso 1', 1),
-  createData('10:30', 'Nombre de autor 2', 'Titulo de conferencia/taller/Concurso 2', 2),
-  createData('11:00', 'Nombre de autor 3', 'Titulo de conferencia/taller/Concurso 3', 3),
+  createData('9:30' , 'Nombre de autor 1', 'Titulo de conferencia/taller/Concurso 1', 'Universidad 1'),
+  createData('10:30', 'Nombre de autor 2', 'Titulo de conferencia/taller/Concurso 2', 'Universidad 2'),
+  createData('11:00', 'Nombre de autor 3', 'Titulo de conferencia/taller/Concurso 3', 'Universidad 3'),
 ];
 
-const fechaDefault = {dia:0,mes:5};
+const fechaDefault = {dia:16,mes:6};
 
 //Lo siguiente se agrega para evitar errores de props desde el DOM:
 //const EventoTable = ({borderAxis,hoverRow,...props}) => <Table {...props}/>

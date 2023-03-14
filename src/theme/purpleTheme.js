@@ -7,11 +7,40 @@ export const purpleTheme = createTheme({
         primary:{
             main: '#09417C'//'#2196f3'
         },
-        secundary:{
-            main: '#74A8BD'//'#78B2BF'//'#3d5afe'
+        secondary:{
+            main: '#735722'// '#78B2BF'//'#78B2BF'//'#3d5afe'
         },
+        //tertiary:{
+        //    main: '#735722'//'#78B2BF'//'#3d5afe'
+        //},
         error:{
             main:red.A400
         }
-    }
+    },
+    //typography: {
+    //    fontSize: 16,
+    //    h3: {
+    //      fontWeight: 700,
+    //      fontSize: '2.2rem'
+    //    },
+    //    h4: {
+    //      fontWeight: 700,
+    //      fontSize: '1.75rem'
+    //    },
+    //    h5: {
+    //      fontWeight: 500
+    //    },
+    //    h6: {
+    //      fontWeight: 500
+    //    }
+    //},
+    components: {
+        MuiLink: {
+          styleOverrides: {
+            root: {
+              textDecoration: 'none',
+            },
+          },
+        },
+      },
 })
