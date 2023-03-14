@@ -31,7 +31,7 @@ export const Conferences = () => {
   return (
     <>
     <WebLayout/>
-    <Grid container> 
+    <Grid container sx={{pr:2,pl:2}}> 
       <Grid item direction="column" xs={12} sm={12} md={12} lg={3}></Grid>
       <Grid item direction="column" xs={12} sm={12} md={12} lg={6}>
 
