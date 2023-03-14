@@ -4,7 +4,7 @@ import React from 'react'
 const listD = ['Cosa por hacer 1', 'Cosa por hacer 2', 'Cosas por hacer 3']
 
 //Este componente solo funciona con largas listas de codigo
-export const SimpleList = ({icon=1 , list = listD}) => {
+export const SimpleList = ({icon=1 , list = listD, pdT= 0.5, fS='0.9em'}) => {
   return (
     <Grid
         container
@@ -16,7 +16,13 @@ export const SimpleList = ({icon=1 , list = listD}) => {
     >
         {list.map((element) => {
             return(         
-            <Typography variant='body' align='justify' sx={{paddingTop:0.5, fontSize:'0.9em'}} > &bull; {element}</Typography>
+              <>
+                <Grid container>
+                  <Typography variant='body' align='justify' sx={{paddingTop: pdT, fontSize:fS}}  > 
+                    &bull; {element}
+                  </Typography>
+                </Grid>
+              </>
             )
         })}   
     </Grid>

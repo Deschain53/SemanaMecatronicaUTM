@@ -92,11 +92,8 @@ export const Contest = () => {
 
         <Subsection text="Bases y reglas de la competencia"/>
           <Typography align='justify'>{byrIntro}</Typography>
-          {listByR.map((element) => {
-            return(         
-              <Typography variant='body' align='justify' sx={{paddingTop:0.5, fontSize:'0.9em'}} > &bull; {element}</Typography>
-              )
-            })}   
+          <SimpleList list={listByR}/>
+
 
         <Subsection text="Premios"/>
             <SimpleList list={listPremios}/>
