@@ -14,7 +14,7 @@ export const WorkShopCard = ({
     }) => {
   return (
     <>
-      <Box>
+      <Box sx={{paddingTop:1, margin:1, }}>
         <div>
           <div>
             {/*imagen alusiva */}

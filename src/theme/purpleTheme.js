@@ -17,7 +17,7 @@ export const purpleTheme = createTheme({
             main:red.A400
         }
     },
-    //typography: {
+    typography: {
     //    fontSize: 16,
     //    h3: {
     //      fontWeight: 700,
@@ -27,13 +27,13 @@ export const purpleTheme = createTheme({
     //      fontWeight: 700,
     //      fontSize: '1.75rem'
     //    },
-    //    h5: {
-    //      fontWeight: 500
-    //    },
-    //    h6: {
-    //      fontWeight: 500
-    //    }
-    //},
+        h5: {
+          fontWeight: 700
+        },
+        h6: {
+          fontWeight: 700,
+        }
+    },
     components: {
         MuiLink: {
           styleOverrides: {
