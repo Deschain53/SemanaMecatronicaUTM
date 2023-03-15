@@ -11,7 +11,7 @@ import { WebLayout } from "../layout/WebLayout"
 const talleresTitle = 'Talleres'
 const talleresInfo = "Los talleres se realizarán los días 25 y 26 de abril en los laboratorios y salas de cómputo de la Universidad Tecnológica de la Mixteca. Su horario será de 16:00 a 19:00 horas."
 const registro = "Los interesados deberán llenar el formato de registro"
-const inscripcion = "La inscripción tendrá un costo de 120 pesos."
+const inscripcion = "La inscripción tendrá un costo de 150 pesos."
 const listTalleres = [
   {item:registro, link:'https://www.utm.mx/~minirobotica/formatos/Formato_Registro_Talleres.docx'}, 
   {item:inscripcion, link: ''}
@@ -25,8 +25,103 @@ const createTaller = (tituloD='', objetivoD='', contenidoD=[''], requisitosD=[''
 
 const talleresList = [
   createTaller(
-    'DISEÑO Y ANÁLISIS DE SISTEMAS MECÁNICOS Y ROBÓTICOS UTILIZANDO EL PROGRAMA MSC ADAMS VIEW',
-    ' El participante aprenda a utilizar el software ADAMS View™ con el objetivo de diseñar y simular la cinemática y dinámica de sistemas mecánicos y robóticos. Este programa es compatible con Matlab® y Solidworks® entre otros, lo cual permite importar y exportar datos para realizar los análisis necesarios.',
+    'TALLER 1. PROGRAMACIÓN EN ARDUINO DE LA PLACA DE DESARROLLO ESP32',
+    ' Dar una visión general de las características del microcontrolador ESP32 así como de la programación de los principales recursos, en alto nivel, usando el ambiente de programación de Arduino.',
+    [
+      'Introducción',
+      'Introducción al microcontrolador ESP32',
+      'Configuración del IDE de Arduino para usar el ESP32',
+      'Entradas y salidas digitales',
+      'Entradas y salidas analógicas',
+      'Salida de modulación de ancho de pulso (PWM)',
+      'Interrupciones externas',
+      'Interrupciones de temporizador',
+      'Comunicación Serial',
+    ],
+    [
+      'Conocimiento básico de programación en lenguaje C',
+      'Conocimiento de uso de protoboard ',
+      'Haber trabajado con la placa Arduino Uno (preferible)'
+    ],
+    ' Dr. Fermín Hugo Ramírez Layeva',
+    ' Laboratorio de potencia y sistemas electromecánicos',
+    20
+  ),
+  createTaller(
+    'TALLER 2. DISEÑO E IMPLEMENTACIÓN DE CIRCUITOS IMPRESOS',
+    'El objetivo del taller es proporcionar el conocimiento para diseñar e implementar una tarjeta de circuito impreso, con base a un prototipo electrónico.',
+    [
+      'Introducción a los circuitos impresos',
+      'Entorno del programa para el diseño de la tarjeta de circuito impreso (PCB)',
+      'Edición del esquemático del circuito electrónico',
+      'Edición del PCB (Ruteo de pistas, vías y plano de tierra)',
+      'Impresión del negativo del PCB y fabricación',
+      'Detalles de la síntesis del PCB',
+    ],
+    [
+      'Conocimiento básicos de electrónica ',
+      'Sala de cómputo (Número de sala por definir)'
+    ],
+    'Dr. Edgardo Yescas Mendoza',
+    ' Sala de cómputo 1',
+    20
+  ),
+  createTaller(
+    'TALLER 3. DIBUJO, ENSAMBLE Y ANIMACIÓN DE MECANISMOS EN SOLIDWORKS',
+    'El alumno aprenderá a diseñar piezas de elementos mecánicos, así como, a hacer el ensamble, la animación y el análisis. También aprenderá a representar las piezas en hojas de dibujo utilizando las vistas necesarias y los ensambles en vista explosionada.',
+    [
+      'Herramientas de croquizar y relaciones geométricas',
+      'Ensamble y animación de mecanismos',
+      'Análisis de piezas y de mecanismos',
+      'Representación por medio de vistas y reglas de acotación',
+      'Vista explosionada de ensambles',
+    ],
+    [
+      'No se requiere conocimiento previo alguno.',
+    ],
+    'Dr. Alberto Antonio García',
+    'Sala de cómputo (Número de sala por definir)',
+    30
+  ),
+  createTaller(
+    'TALLER 4. INTRODUCCIÓN A ANSYS WORKBENCH',
+    'En este taller se abordará de forma general el uso de la herramienta Ansys Workbench, para el modelado por elementos finitos de problemas de ingeniería.',
+    [
+      'Interfaz de Ansys Workbench',
+      'Modelado con space claim',
+      'Mallado',
+      'Solución',
+      'Pos-procesamiento',
+    ],
+    [
+      'No se requiere conocimiento previo alguno.',
+    ],
+    'Dr. José Gabriel Mendoza Larios',
+    'Sala de cómputo (Número de sala por definir)',
+    25
+  ),
+  createTaller(
+    'TALLER 5. ROBÓTICA - PROGRAMACIÓN DE LEGO® MINDSTORMS MEDIANTE EL SOFTWARE ROBOTC',
+    'En este taller se aprenderá a programar la plataforma LEGO Mindstorms® mediante el software ROBOTC® con el objetivo de mostrar un panorama generalizado de lo que es la robótica, contemplando en este curso las interrogantes de ¿Qué es la robótica?, ¿Para qué se utiliza? Y ¿Cómo generar soluciones a una problemática ingenieril?, ante esas interrogantes es importante conocer los elementos básicos que contiene un robot (mcu, sensores y actuadores), así como también, mostrar lo tangible de la programación en lenguaje en c y su aplicación en desafíos y solución de problemáticas en la ingeniería, por lo que, los participantes tendrán que generar su código del comportamiento de los periféricos en los que se pueden conectar sensores y actuadores para llevar acabo la solución de una tarea.',
+    [
+      'Introducción a la robótica y programación LEGO',
+      'Actuadores - servomotores - motores en LEGO (configuraciones de velocidad y giro)',
+      'Sensores - sensor de contacto, sensor de distancia, sensor de color y sensor infrarrojo',
+      'Seguimiento de trayectoria de un montacargas parte 1.',
+      'Seguimiento de trayectoria de un montacargas (con obstáculos) parte 2.',
+      'Procesos concurrentes - acarreo de cargas en un proceso de producción',
+    ],
+    [
+      'Conocimientos básicos de programación en algún lenguaje (C, Java, Phyton) ',
+      'Conocimientos básicos en electrónica (sensores ópticos, sensores de contacto y servomotores).'
+    ],
+    'Ing. Mario Enrique Herrera Cordero',
+    'Laboratorio de electrónica analógica',
+    20
+  ),
+  createTaller(
+    'TALLER 6. SIMULACIÓN DE SISTEMAS MECATRÓNICOS UTILIZANDO EL PROGRAMA MSC ADAMS VIEW™ ',
+    'El participante aprenderá a utilizar el software ADAMS View™ con el objetivo de simular sistemas mecánicos, robóticos y mecatrónicos para visualizar el comportamiento de variables como la cinemática y la dinámica. Esta herramienta es compatible con Matlab® y Solidworks® entre otros, lo que permite importar y exportar datos para realizar los análisis pertinentes. Como resultado se tendrá el conocimiento básico del software, así como la interpretación de los resultados obtenidos, además del material necesario para desarrollar prácticas complementarias.',
     [
       'Introducción de ADAMS View™',
       'Construcción de un mecanismo',
@@ -34,18 +129,18 @@ const talleresList = [
       'Ploteo de resultados',
       'Creación de medidas',
       'Exportación e importación de datos',
-      'Creación general de restricciones',
       'Co-simulación ADAMS-Matlab',
     ],
     [
-      'Conocimiento del software SolidWorks',
+      'Conocimiento de algun software CAD (preferible)',
       'Manejo de lectura en inglés'
     ],
-    ' Dra. Esther Lugo González',
-    ' Sala de cómputo 1',
+    'Dra. Esther Lugo González',
+    'Sala de cómputo (Número de sala por definir)',
     20
   ),
-  createTaller(),
+
+
 ] 
 
 
@@ -61,10 +156,13 @@ export const Workshops = () => {
         <TitleSection text={talleresTitle} />
         <Typography sx={{pt:1}}>{talleresInfo}</Typography>
         <DownloadList list={listTalleres} fS='1em'/>
+      
+      </Grid>
+      <Grid item direction="column" xs={12} sm={12} md={12} lg={3}></Grid>
+    </Grid>
 
-
-
-        <Box sx={{pt:2}}>
+      <Box container sx={{pl:2,pr:2}}>
+        <Grid container fluid>
           {
             talleresList.map( (taller) => {
               return(
@@ -72,12 +170,10 @@ export const Workshops = () => {
                 
                 )
               })
-          }
-        </Box>
-      
-      </Grid>
-      <Grid item direction="column" xs={12} sm={12} md={12} lg={3}></Grid>
-    </Grid>
+            }
+        </Grid>
+      </Box>
     </>
+
   )
 }
