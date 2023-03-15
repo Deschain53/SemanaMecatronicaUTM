@@ -39,7 +39,7 @@ export const EventoList = ({ fecha= fechaDefault, eventos=rows}) => { //Como pro
             <TableCell align="left" colSpan={3} sx={{border:'0',paddingBottom:1.5}}>
               <Typography 
                 variant="h6"
-                sx={{paddingLeft:0, paddingTop:0, fontWeight:'bold'}}
+                sx={{pl:0,pr:0, paddingtop:2, fontWeight:'bold'}}
               >{fecha.dia + ' de ' + meses[fecha.mes-1]}</Typography>
             </TableCell>
           </TableRow>

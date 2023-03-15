@@ -92,7 +92,7 @@ export const Contest = () => {
 
         <TitleSection text={titleConcurso}/>
 
-        <Typography sx={{paddingTop:2}}>{intro1}</Typography>
+        <Typography variant='h6' sx={{pt:2, fontWeight:'700'}}>{intro1}</Typography>
 
         <Box container>
           <ListIconText Icon={DirectionsCarIcon} texto='Seguidores de linea' download="Reglamento_Seguidor.pdf"/>
@@ -128,8 +128,11 @@ export const Contest = () => {
 
         <Subsection text="Programa de actividades"/>
           <Typography align='justify'>{programaActividades}</Typography>
-          <SimpleEventList  fecha ={fechaO} eventos = {actividadesHorario}/>
-        
+        {/*  <SimpleEventList  fecha ={fechaO} eventos = {actividadesHorario}/>
+        */ 
+          //
+        }
+
         <Subsection text="Información adicional"/>
           <Box container>
               <Grid container>

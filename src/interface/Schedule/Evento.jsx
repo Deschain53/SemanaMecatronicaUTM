@@ -14,7 +14,7 @@ export const Evento = ({eventoObject}) => {
        
           <TableRow key={eventoObject.name} >
               <TableCell sx={{borderBottom:'0', paddingBottom:0}}>
-                <Typography>
+                <Typography sx={{fontSize:'1em' , fontWeight:'600'}}>
                   {eventoObject.horario}
                 </Typography>
               </TableCell>

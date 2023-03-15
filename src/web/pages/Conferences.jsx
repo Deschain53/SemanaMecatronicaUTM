@@ -7,21 +7,21 @@ function createData(horario = '9:00', autor, titulo, universidad ) {
   return { horario, autor, titulo, universidad };
 }
 
-const introduccionConferencias = "Se realizarán los días 27 y 28 de abril y se llevarán a cabo en el Auditorio de la Universidad Tecnológica de la Mixteca. El acceso a las mismas "
+const introduccionConferencias = "Se realizarán los días 27 y 28 de abril y se llevarán a cabo en el Auditorio de la Universidad Tecnológica de la Mixteca. El acceso a las mismas NO TIENE COSTO"
 const accesoSinCosto = 'NO TIENE COSTO.';
 
 const conferenciasDia1 = [
-  createData('9:00 - 10:00' , 'Ing. Omar Hernández Gallegos', '5G Technology: Enabler of the new networked society.', 'Ericsson'),
-  createData('10:00 - 11:00', 'Dr. Ramiro Velazquez', 'Tecnologías de asistencia para personas con discapacidades físicas.', 'Universidad Panamericana'),
-  createData('11:00 - 12:00', 'Ing. Luis Sergio Martínez Villanueva', 'The Future Mobility.', 'Continental Automotive'),
-  createData('12:00 - 13:00', 'M.C. Eric William Zurita', 'Control Robusto: PID y Rechazo Activo de Perturbaciones.', 'Cinvestav'),
+  createData('9:00-10:00' , 'MC. Felipe Santigo Espinoza', 'Microcontroladores basados en ARM y el estándar de CMSIS.', 'Inspiring Software Tecnology'),
+  createData('10:00-11:00', 'Dr. Jaime Julián Cid Monjaraz', 'Por definir', 'BUAP'),
+  createData('11:00-12:00', 'Dr. José de Jesus Rangel Magdaleno', 'Por definir', 'INAOE'),
+  createData('12:00-13:00', 'Por definir', 'Por definir', 'Por definir'),
 ];
 
 const conferenciasDia2 = [
-  createData('9:00 - 10:00' , 'Dr. Hebert Sira Ramírez', 'La disciplina de la mecatrónica: logros, avances y retos.', 'Universidad 1'),
-  createData('10:00 - 11:00', 'Dr. Pedro Bañuelos Sánchez', 'Generación de energía eléctrica por medio de olas de mar en México.', 'UDLAP'),
-  createData('11:00 - 12:00', 'Dr. José Fermi Guerrero Castellanos', 'Los Vehículos Aéreos no tripulados: desarrollo y perspectivas para científicos e ingenieros.', 'BUAP'),
-  createData('12:00 - 13:00', 'Dr. Jesus Linares Flores', 'Por definir', 'UTM'),
+  createData('9:00-10:00' , 'Dr. José Emilio Vargas Soto', 'Por definir', 'Universidad Autónoma de Querétero'),
+  createData('10:00-11:00', 'Dra. Yara Perez Maldonado', 'Por definir', 'IPN'),
+  createData('11:00-12:00', 'M.C. Genobeba Ramirez Castillo', 'Las habilidades de un ingeniero 4.0', 'Universidad Autónoma de la ciudad de México'),
+  createData('12:00-13:00', 'Por definir', 'Por definir', 'Por definir'),
 ];
 
 const infoConferencias = [
@@ -38,8 +38,8 @@ export const Conferences = () => {
       <Grid item direction="column" xs={12} sm={12} md={12} lg={6}>
 
         <TitleSection text='Conferencias' />
-        <Typography sx={{mt:1}}>{introduccionConferencias}</Typography>
-        <Typography>{accesoSinCosto}</Typography>
+        <Typography variant='h6' sx={{ mt:2, fontWeight:'700'}}>{introduccionConferencias}</Typography>
+
 
         <Schedule titulo='Horario' infoConferencias = {infoConferencias}/> 
 

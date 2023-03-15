@@ -1,6 +1,6 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
-import { Box } from '@mui/material';
+import { Box, Link } from '@mui/material';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
@@ -12,7 +12,7 @@ import MenuItem from '@mui/material/MenuItem';
 import { NavLink } from 'react-router-dom';
 //import LogoUTM from '../../img/utm1.jpg'
 import Grid from '@mui/material/Grid';
-
+import { Link as RouterLink} from 'react-router-dom';
 
 const pages = [
     {label:'Inicio',direction:'home'},
@@ -79,17 +79,11 @@ export const LineMenu = ({nameLogo='name logo'}) => {
                         >
                           <Typography 
                             variant='h6'
-                            //style={{
-                            //    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-                            //    borderRadius: 3,
-                            //    border: 0,
-                            //    color: 'white',
-                            //    textDecoration:'none'
-                            //}}
                           >
                             {page.label}
                           </Typography>
                       </NavLink>
+
                   </MenuItem>
                 ))}
               </Menu>
@@ -182,3 +176,8 @@ export const LineMenu = ({nameLogo='name logo'}) => {
     </>
     );
   }
+
+  
+//  <Link component={RouterLink} to={page.direction}>
+//  {page.label}
+//</Link>

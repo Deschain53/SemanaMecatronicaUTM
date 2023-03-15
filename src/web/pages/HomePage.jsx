@@ -1,6 +1,8 @@
 import { WebLayout } from "../layout/WebLayout"
 import { Grid, Typography } from '@mui/material'
 import Flyer from '../../img/flyer.jpeg'
+import LogoElectronica from '../../img/logoElec.jpeg'
+import LogoMecatronica from '../../img/logoMeca.jpeg'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import SchoolIcon from '@mui/icons-material/School';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
@@ -25,44 +27,49 @@ export const HomePage = () => {
     <WebLayout/>
       <Grid container sx={{padding:1}} spacing={2}>
         {/*Imagen de flyer: */}
-        <Grid item sm={12} xs={12} md={6} lg={4} xl={6}>
+        <Grid item sm={12} xs={12} md={12} lg={5} xl={5}>
           <Box container sx={{padding:2}}>
             <img src={Flyer}//(mode === 'dark' ? logoObs : logoClaro)} ///DESECTRUCTURAR
                  style={{width:'100%'}}/>
           </Box>
         </Grid>
         {/*Informacion*/}
-        <Grid item sm={12} xs={12} md={6} lg={8} xl={6}>
+
+        <Grid item sm={12} xs={12} md={12} lg={7} xl={7}>
+
+
           <Box container sx={{paddingTop:2}}>
-            <Typography variant='body' >{invitacion}</Typography>
+            <Typography variant='h6' sx={{fontWeight:'700'}} >{invitacion}</Typography>
             <Grid 
               container
               spacing={0}
               direction="column"
               alignItems="center"
               justifyContent="center">
-              <Typography variant='h5' color='primary' sx={{fontWeight:'700',mt:1,mb:1}} >{titleSemana}</Typography>
+              <Typography variant='h5' color='primary' sx={{fontWeight:'700',mt:2,mb:2}} >{titleSemana}</Typography>
             </Grid>
-            <Typography variant='body'>{inter1}</Typography>
-            {
-              /* 
-              <Typography>{fecha}</Typography>
-              <Typography>{inter2}</Typography>
-              <Typography>{inter3}</Typography>
-              */
-            }
+            <Typography variant='h6' sx={{fontWeight:'700', mb:2}}>{inter1}</Typography>
           </Box>
 
-          <Box container sx={{paddingLeft:1}} >
-            <ListIconText Icon={LocationOnIcon} texto='Carretera a Acatlima km. 2.5, Huajuapan de León, Oaxaca'/>
-            <ListIconText Icon={SchoolIcon} texto='Universidad Tecnológica de la Mixteca'/>
-            <ListIconText Icon={EventAvailableIcon} texto='Abril 26 - 28 del 2023'/>
-          </Box>
+          <Grid 
+            container
+            spacing={0}
+            direction="row"
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Box container sx={{paddingLeft:1}} >
+              <ListIconText Icon={LocationOnIcon} texto='Carretera a Acatlima km. 2.5, Huajuapan de León, Oaxaca'/>
+              <ListIconText Icon={SchoolIcon} texto='Universidad Tecnológica de la Mixteca'/>
+              <ListIconText Icon={EventAvailableIcon} texto='Abril 26 - 28 del 2023'/>
+            </Box>
+          </Grid>
+
         </Grid>
 
       </Grid>
 
-      <Grid container sx={{pr:1,pl:1}} spacing={4} >
+      <Grid container sx={{pr:1,pl:1, pt:5}} spacing={4} >
           <Grid item sx={12} sm={12} md={4} lg={4} xl={4}>
             <InfoEvent 
               Icon = {GroupsIcon}
@@ -119,3 +126,23 @@ export const HomePage = () => {
       </Grid>
 
 */
+
+//          {/*
+//          <Box container sx={{pl:5}} > 
+//            <Grid 
+//              container
+//              spacing={4}
+//              direction="row"
+//              alignItems="center"
+//              justifyContent="center"
+//            >
+//              <Box container sx={{pt:2}}>
+//                <img src={LogoElectronica}//(mode === 'dark' ? logoObs : logoClaro)} ///DESECTRUCTURAR
+//                     style={{width:'100px'}}/>
+//              </Box>
+//              <Box container sx={{pt:2}}>
+//                <img src={LogoMecatronica}//(mode === 'dark' ? logoObs : logoClaro)} ///DESECTRUCTURAR
+//                     style={{width:'120px'}}/>
+//              </Box>
+//          </Grid>
+//          </Box>*/}

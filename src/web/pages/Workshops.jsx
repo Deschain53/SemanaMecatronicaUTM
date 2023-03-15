@@ -9,7 +9,7 @@ import { TitleSection } from "../../interface/Typo/TitleSection"
 import { WebLayout } from "../layout/WebLayout"
 
 const talleresTitle = 'Talleres'
-const talleresInfo = "Los talleres se realizarán los días 25 y 26 de abril en los laboratorios y salas de cómputo de la Universidad Tecnológica de la Mixteca. Su horario será de 16:00 a 19:00 horas."
+const talleresInfo = "Los talleres se realizarán los días 27 y 28 de Abril en los laboratorios y salas de cómputo de la Universidad Tecnológica de la Mixteca. Su horario será de 16:00 a 19:00 horas."
 const registro = "Los interesados deberán llenar el formato de registro"
 const inscripcion = "La inscripción tendrá un costo de 150 pesos."
 const listTalleres = [
@@ -60,10 +60,10 @@ const talleresList = [
     ],
     [
       'Conocimiento básicos de electrónica ',
-      'Sala de cómputo (Número de sala por definir)'
+      'Uso del protoboard'
     ],
     'Dr. Edgardo Yescas Mendoza',
-    ' Sala de cómputo 1',
+    ' Sala de cómputo (Número de sala por definir)',
     20
   ),
   createTaller(
@@ -154,14 +154,14 @@ export const Workshops = () => {
         
 
         <TitleSection text={talleresTitle} />
-        <Typography sx={{pt:1}}>{talleresInfo}</Typography>
-        <DownloadList list={listTalleres} fS='1em'/>
+        <Typography variant='h6' sx={{fontWeight:'700', pt:2}}>{talleresInfo}</Typography>
+        <DownloadList list={listTalleres} fS='1.2em'/>
       
       </Grid>
       <Grid item direction="column" xs={12} sm={12} md={12} lg={3}></Grid>
     </Grid>
 
-      <Box container sx={{pl:2,pr:2}}>
+      <Box container sx={{pl:2,pr:2, pt:2}}>
         <Grid container fluid>
           {
             talleresList.map( (taller) => {
