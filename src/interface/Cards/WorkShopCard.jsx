@@ -9,8 +9,6 @@ import { Wsg } from './WSG'
 export const WorkShopCard = ({taller}) => {
   const [expandible, setExpandible] = useState(false)
 
-  console.log(expandible)
-    //    <Box sx={boxSX} >
   return ( 
 
       <>

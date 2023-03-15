@@ -15,10 +15,10 @@ import Grid from '@mui/material/Grid';
 import { Link as RouterLink} from 'react-router-dom';
 
 const pages = [
-    {label:'Inicio',direction:'home'},
-    {label:'Conferencias',direction:'conferences'},
-    {label:'Concurso',direction:'contest'},
-    {label:'Talleres',direction:'workshops'},
+    {label:'Inicio',direction:'/Semana_EyM/'},
+    {label:'Conferencias',direction:'/Semana_EyM/conferences'},
+    {label:'Concurso',direction:'/Semana_EyM/contest'},
+    {label:'Talleres',direction:'/Semana_EyM/workshops'},
   ]
   
 

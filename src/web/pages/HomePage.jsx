@@ -75,7 +75,7 @@ export const HomePage = () => {
               Icon = {GroupsIcon}
               title = 'Conferencias'
               description = 'Un ciclo de Conferencias para divulgar los resultados de la investigación aplicada en las áreas de Electrónica y Mecatrónica. Investigación que se realiza en nuestra universidad y en otros centros del país.'
-              link='/conferences'
+              link='/Semana_EyM/conferences'
             />
           </Grid>
           <Grid item sx={12} sm={12} md={4} lg={4} xl={4}>
@@ -83,7 +83,7 @@ export const HomePage = () => {
               Icon = {PrecisionManufacturingIcon}
               title = 'Concursos'
               description = 'El 11º Concurso de Minirobótica, en donde los participantes podrán integrar conocimiento y habilidades, de manera divertida, creativa e innovadora.'
-              link='/contest'
+              link='/Semana_EyM/contest'
             />
           </Grid>
           <Grid item sx={12} sm={12} md={4} lg={4} xl={4}>
@@ -91,7 +91,7 @@ export const HomePage = () => {
               Icon = {HomeRepairServiceIcon}
               title = 'Talleres'
               description = 'Una serie de Talleres para promover e incentivar el conocimiento relacionado con las ingenierías en Electrónica y Mecatrónica, motivando a estudiantes, profesionistas y aficionados para la adquisición de nuevas habilidades.'
-              link='/workshops'
+              link='/Semana_EyM/workshops'
             />
           </Grid>
 
