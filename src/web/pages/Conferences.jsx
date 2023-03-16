@@ -14,7 +14,7 @@ const conferenciasDia1 = [
   createData('9:00-10:00' , 'MC. Felipe Santigo Espinoza', 'Microcontroladores basados en ARM y el estándar de CMSIS.', 'Inspiring Software Tecnology'),
   createData('10:00-11:00', 'Dr. Jaime Julián Cid Monjaraz', 'Por definir', 'BUAP'),
   createData('11:00-12:00', 'Dr. José de Jesus Rangel Magdaleno', 'Por definir', 'INAOE'),
-  createData('12:00-13:00', 'Por definir', 'Por definir', 'Por definir'),
+  createData('12:00-13:00', 'Dr. Oscar David Ramirez Cárdenaz', 'Por definir', 'Por definir'),
 ];
 
 const conferenciasDia2 = [

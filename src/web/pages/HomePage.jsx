@@ -27,15 +27,24 @@ export const HomePage = () => {
     <WebLayout/>
       <Grid container sx={{padding:1}} spacing={2}>
         {/*Imagen de flyer: */}
-        <Grid item sm={12} xs={12} md={12} lg={5} xl={5}>
+        
+        <Grid                                               
+            item sm={12} xs={12} md={12} lg={5} xl={5}  //Configuracion con imagen
+            //item sm={12} xs={12} md={12} lg={3} xl={3}    //Configuracion sin imagen
+          >
+          { 
           <Box container sx={{padding:2}}>
             <img src={flyer}//(mode === 'dark' ? logoObs : logoClaro)} ///DESECTRUCTURAR
                  style={{width:'100%'}}/>
           </Box>
+          }     
         </Grid>
         {/*Informacion*/}
 
-        <Grid item sm={12} xs={12} md={12} lg={7} xl={7}>
+        <Grid 
+          //item sm={12} xs={12} md={12} lg={7} xl={7}  //Configuracion con imagen
+          item sm={12} xs={12} md={12} lg={6} xl={6}    //Configuracion sin imagen        
+        >
 
 
           <Box container sx={{paddingTop:2}}>
@@ -67,7 +76,13 @@ export const HomePage = () => {
 
         </Grid>
 
-      </Grid>
+        
+        <Grid                                          
+            //item sm={12} xs={12} md={12} lg={3} xl={3}  //Configuracion sin imagen
+            item sm={12} xs={12} md={12} lg={5} xl={5}  //Configuracion con imagen
+        ></Grid>
+        
+        </Grid>
 
       <Grid container sx={{pr:1,pl:1, pt:5}} spacing={4} >
           <Grid item sx={12} sm={12} md={4} lg={4} xl={4}>

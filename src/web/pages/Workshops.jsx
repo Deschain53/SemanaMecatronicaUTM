@@ -1,19 +1,18 @@
 import { Grid, Typography } from "@mui/material"
 import { Box } from "@mui/system"
-import { DownloadButton } from "../../interface/Buttons/DownloadButton"
-import BasicCard from "../../interface/Cards/ExampleCard"
 import { WorkShopCard } from "../../interface/Cards/WorkShopCard"
 import { DownloadList } from "../../interface/Lists/DownloadList"
-import { SimpleList } from "../../interface/Lists/SimpleList"
 import { TitleSection } from "../../interface/Typo/TitleSection"
 import { WebLayout } from "../layout/WebLayout"
+//import talleres from '../../informacion/talleres.json'
+
 
 const talleresTitle = 'Talleres'
 const talleresInfo = "Los talleres se realizarán los días 27 y 28 de Abril en los laboratorios y salas de cómputo de la Universidad Tecnológica de la Mixteca. Su horario será de 16:00 a 19:00 horas."
 const registro = "Los interesados deberán llenar el formato de registro"
 const inscripcion = "La inscripción tendrá un costo de 150 pesos."
 const listTalleres = [
-  {item:registro, link:'https://www.utm.mx/~minirobotica/formatos/Formato_Registro_Talleres.docx'}, 
+  {item:registro, link:'https://www.utm.mx/Semana_EyM/formatos/Formato_Registro_Talleres-2023.docx'}, 
   {item:inscripcion, link: ''}
 ]
 

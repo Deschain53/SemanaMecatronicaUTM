@@ -7,7 +7,7 @@ import { Subsection } from "../../interface/Typo/Subsection";
 import { SimpleList } from "../../interface/Lists/SimpleList";
 
 //Iconos de lista de categorias:
-import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
+import EngineeringIcon from '@mui/icons-material/Engineering';
 import SmartToyIcon from '@mui/icons-material/SmartToy';
 import BorderOuterIcon from '@mui/icons-material/BorderOuter';
 
@@ -36,7 +36,7 @@ const listCompetidores = [
   {item:"La participación será por equipos hasta de 3 integrantes en todas las categorías.", link:''},
   {item:"La inscripción tendrá una cuota de recuperación de $300.00 por prototipo, con un descuento para estudiantes del SUNEO.", link:''},
   {item:"Un equipo puede registrar más de un prototipo en la misma categoría siempre y cuando sus prototipos tengan diseños diferentes.", link:''},
-  {item:"Los equipos participantes deberán llenar el formato de registro.", link:'https://www.utm.mx/~minirobotica/formatos/Formato_Registro_Concurso.docx'},
+  {item:"Los equipos participantes deberán llenar el formato de registro.", link:'http://www.utm.mx/Semana_EyM/formatos/Formato_Registro_Concurso-2023.docx'},
   {item:"Una vez llenado el formato, deberán entregarlo junto con copias de las credenciales de estudiantes vigentes en la mesa de registro el día del evento, en donde también se recibirán los pagos en efectivo.", link:''},
   {item:"Si durante la competencia se observa que personas sin registro manipulan o corrigen un mini-robot, el equipo automáticamente quedará eliminado.", link:''},
   {item:"Una categoría podrá declararse desierta si tiene menos de 5 competidores.", link:''},
@@ -54,9 +54,9 @@ const listDurante = [
 
 const byrIntro = '';
 const listByR = [
-  {item:'Descargar Reglamento - Seguidor de línea  ',link:'https://www.utm.mx/~minirobotica/reglamentos/Reglamento_Seguidor.pdf'},
-  {item:'Descargar Reglamento - Robot de laberinto ',link:'https://www.utm.mx/~minirobotica/reglamentos/Reglamento_Seguidor.pdf'},
-  {item:'Descargar Reglamento - Mini-sumo           ',link:'https://www.utm.mx/~minirobotica/reglamentos/Reglamento_Minisumo.pdf'},
+  {item:'Descargar Reglamento - Proyectos integradores ',link:''},
+  {item:'Descargar Reglamento - Robot de laberinto ',link:'https://www.utm.mx/Semana_EyM/formatos/Reglamento_Laberinto.pdf'},
+  {item:'Descargar Reglamento - Mini-sumo           ',link:'https://www.utm.mx/Semana_EyM/formatos/Reglamento_Minisumo.pdf'},
 ]
 
 //Lista de premios
@@ -95,7 +95,7 @@ export const Contest = () => {
         <Typography variant='h6' sx={{pt:2, fontWeight:'700'}}>{intro1}</Typography>
 
         <Box container>
-          <ListIconText Icon={DirectionsCarIcon} texto='Seguidores de linea' download="Reglamento_Seguidor.pdf"/>
+          <ListIconText Icon={EngineeringIcon} texto='Proyectos integradores'/>
           <ListIconText Icon={BorderOuterIcon} texto='Robot Laberinto'/>
           <ListIconText Icon={SmartToyIcon} texto='Mini-sumo'/>
         </Box>
