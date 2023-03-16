@@ -14,13 +14,13 @@ const conferenciasDia1 = [
   createData('9:00-10:00' , 'MC. Felipe Santigo Espinoza', 'Microcontroladores basados en ARM y el estándar de CMSIS.', 'Inspiring Software Tecnology'),
   createData('10:00-11:00', 'Dr. Jaime Julián Cid Monjaraz', 'Por definir', 'BUAP'),
   createData('11:00-12:00', 'Dr. José de Jesus Rangel Magdaleno', 'Por definir', 'INAOE'),
-  createData('12:00-13:00', 'Dr. Oscar David Ramirez Cárdenaz', 'Por definir', 'Por definir'),
+  createData('12:00-13:00', 'Dr. Oscar David Ramirez Cárdenaz', 'Por definir', 'División de estudios de posgrado UTM'),
 ];
 
 const conferenciasDia2 = [
   createData('9:00-10:00' , 'Dr. José Emilio Vargas Soto', 'Por definir', 'Universidad Autónoma de Querétero'),
   createData('10:00-11:00', 'Dra. Yara Perez Maldonado', 'Por definir', 'IPN'),
-  createData('11:00-12:00', 'M.C. Genobeba Ramirez Castillo', 'Las habilidades de un ingeniero 4.0', 'Universidad Autónoma de la ciudad de México'),
+  createData('11:00-12:00', 'M.C. Genoveva Ramirez Castillo', 'Las habilidades de un ingeniero 4.0', 'Universidad Autónoma de la ciudad de México'),
   createData('12:00-13:00', 'Por definir', 'Por definir', 'Por definir'),
 ];
 

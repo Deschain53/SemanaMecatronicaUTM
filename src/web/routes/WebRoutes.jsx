@@ -12,7 +12,7 @@ export const WebRoutes = () => {
             <Route path="/Semana_EyM/conferences"  element={<Conferences/>}/>
             <Route path="/Semana_EyM/workshops"  element={<Workshops/>}/>
             <Route path="/Semana_EyM/contest"  element={<Contest/>}/>
-            <Route path='*' element={<Navigate to="/Semana_EyM/"/>}/>
+            <Route path='*' element={<Navigate to="Semana_EyM/"/>}/>
         </Routes>
     )
 }
