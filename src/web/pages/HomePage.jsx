@@ -1,8 +1,8 @@
 import { WebLayout } from "../layout/WebLayout"
 import { Grid, Typography } from '@mui/material'
-import flyer from '../../img/flyer.jpeg'
-import LogoElectronica from '../../img/logoElec.jpeg'
-import LogoMecatronica from '../../img/logoMeca.jpeg'
+//import flyer from '../../img/flyer.jpeg'
+//import LogoElectronica from '../../img/logoElec.jpeg'
+//import LogoMecatronica from '../../img/logoMeca.jpeg'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import SchoolIcon from '@mui/icons-material/School';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
@@ -34,16 +34,17 @@ export const HomePage = () => {
           >
           { 
           <Box container sx={{padding:2}}>
-            <img src={flyer}//(mode === 'dark' ? logoObs : logoClaro)} ///DESECTRUCTURAR
-                 style={{width:'100%'}}/>
+            <img //src={flyer}//(mode === 'dark' ? logoObs : logoClaro)} ///DESECTRUCTURAR
+              src="https://www.utm.mx/Semana_EyM/assets/flyer.jpeg"
+              style={{width:'100%'}}/>
           </Box>
           }     
         </Grid>
         {/*Informacion*/}
 
         <Grid 
-          //item sm={12} xs={12} md={12} lg={7} xl={7}  //Configuracion con imagen
-          item sm={12} xs={12} md={12} lg={6} xl={6}    //Configuracion sin imagen        
+          item sm={12} xs={12} md={12} lg={7} xl={7}  //Configuracion con imagen
+          //item sm={12} xs={12} md={12} lg={6} xl={6}    //Configuracion sin imagen        
         >
 
 
