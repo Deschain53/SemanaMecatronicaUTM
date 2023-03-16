@@ -1,6 +1,6 @@
 import { WebLayout } from "../layout/WebLayout"
 import { Grid, Typography } from '@mui/material'
-import Flyer from '../../img/flyer.jpeg'
+import flyer from '../../img/flyer.jpeg'
 import LogoElectronica from '../../img/logoElec.jpeg'
 import LogoMecatronica from '../../img/logoMeca.jpeg'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
@@ -29,7 +29,7 @@ export const HomePage = () => {
         {/*Imagen de flyer: */}
         <Grid item sm={12} xs={12} md={12} lg={5} xl={5}>
           <Box container sx={{padding:2}}>
-            <img src={Flyer}//(mode === 'dark' ? logoObs : logoClaro)} ///DESECTRUCTURAR
+            <img src={flyer}//(mode === 'dark' ? logoObs : logoClaro)} ///DESECTRUCTURAR
                  style={{width:'100%'}}/>
           </Box>
         </Grid>
