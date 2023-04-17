@@ -11,17 +11,19 @@ const introduccionConferencias = "Se realizarán los días 27 y 28 de abril y se
 const accesoSinCosto = 'NO TIENE COSTO.';
 
 const conferenciasDia1 = [
-  createData('9:00-10:00' , 'MC. Felipe Santigo Espinoza', 'Microcontroladores basados en ARM y el estándar de CMSIS.', 'Inspiring Software Tecnology'),
-  createData('10:00-11:00', 'Dr. Jaime Julián Cid Monjaraz', 'Por definir', 'BUAP'),
-  createData('11:00-12:00', 'Dr. José de Jesus Rangel Magdaleno', 'Por definir', 'INAOE'),
-  createData('12:00-13:00', 'Dr. Oscar David Ramirez Cárdenaz', 'Por definir', 'División de estudios de posgrado UTM'),
+  createData('9:00 - 10:00' , 'MC. Felipe Santigo Espinoza', 'Microcontroladores basados en ARM y el estándar de CMSIS.', 'Inspiring Software Tecnology'),
+  createData('10:00 - 11:00', 'Dr. Oscar David Ramirez Cárdenaz', 'Introducción a la robótica móvil: navegando en el mundo de los robots autónomos', 'División de estudios de posgrado UTM'),
+  createData('11:00 - 12:00', 'Dr. Jaime Julián Cid Monjaraz', 'Innovación y mecatrónica', 'Benemérita Universidad Autónoma de Puebla'),
+  createData('12:00 - 13:00', 'Dr. José de Jesus Rangel Magdaleno', 'Aplicaciones de los FPGAS en la instrumentación y procesamiento de señales', 'Instituto Nacional de Astrofísica, Óptica y Electrónica'),
+  createData('13:00 - 14:00', 'Dra. Esther Lugo Gonzalez', 'Técnicas de optimización implementadas en el diseño de prototipos', 'Instituto de Electrónica y Mecatrónica UTM'),
 ];
 
 const conferenciasDia2 = [
-  createData('9:00-10:00' , 'Dr. José Emilio Vargas Soto', 'Por definir', 'Universidad Autónoma de Querétero'),
-  createData('10:00-11:00', 'Dra. Yara Perez Maldonado', 'Por definir', 'IPN'),
-  createData('11:00-12:00', 'M.C. Genoveva Ramirez Castillo', 'Las habilidades de un ingeniero 4.0', 'Universidad Autónoma de la ciudad de México'),
-  createData('12:00-13:00', 'Por definir', 'Por definir', 'Por definir'),
+  createData('9:00 - 10:00' , 'Dr. José Emilio Vargas Soto', 'Metodología de proyectos mecatrónicos', 'Universidad Autónoma de Querétero'),
+  createData('10:00 - 11:00', 'Dra. Yara Perez Maldonado', 'Modelos matemáticos para la estimación de incertidumbre en tanques de grandes volúmenes', 'Instituto Politecnico Nacional'),
+  createData('11:00 - 12:00', 'M.C. Genoveva Ramirez Castillo', 'Las habilidades de un ingeniero 4.0', 'Universidad Autónoma de la Ciudad de México'),
+  createData('12:00 - 13:00', 'Dr. Jose Antonio Juárez Abad', 'La rectificación activa en los sistemas de energía para alta eficiencia', 'Instituto de Electrónica y Mecatrónica UTM'),
+  createData('13:00 - 14:00', 'Dra. Verónica Rodriguez Lopez', 'Inteligencia artificial e internet de las cosas', 'Instituto de Computación UTM'),
 ];
 
 const infoConferencias = [

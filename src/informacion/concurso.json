@@ -1,0 +1,70 @@
+{
+    "titleConcurso": "11° Concurso de minirobótica",
+    "intro1": "El 11° Concurso de Minirobótica se apertura con tres categorías de participación:",
+    "intro2": "La contienda está dirigida a estudiantes que cursen los niveles medio superior o superior de cualquier institución educativa, quienes deberán avalar su condición de estudiantes por medio de una credencial vigente.",
+    "objetivo": "Fomentar el espíritu creativo y de innovación en los participantes, promoviendo el uso de sus conocimientos y habilidades para resolver problemas de carácter práctico de una forma ingeniosa y divertida.",
+    "competidoresIntro": "",
+    "listCompetidores": [
+        {   "item":"La participación será por equipos hasta de 3 integrantes en todas las categorías.", 
+            "link":""},
+        {   "item":"La inscripción tendrá una cuota de recuperación de $300.00 por prototipo, con un descuento para estudiantes del SUNEO.", 
+            "link":""},
+        {   "item":"Un equipo puede registrar más de un prototipo en la misma categoría siempre y cuando sus prototipos tengan diseños diferentes.", 
+            "link":""},
+        {   "item":"Los equipos participantes deberán llenar el formato de registro.", 
+            "link":"http://www.utm.mx/Semana_EyM/formatos/Formato_Registro_Concurso-2023.docx"},
+        {   "item":"Una vez llenado el formato, deberán entregarlo junto con copias de las credenciales de estudiantes vigentes en la mesa de registro el día del evento, en donde también se recibirán los pagos en efectivo.", 
+            "link":""},
+        {   "item":"Si durante la competencia se observa que personas sin registro manipulan o corrigen un mini-robot, el equipo automáticamente quedará eliminado.", 
+            "link":""},
+        {   "item":"Una categoría podrá declararse desierta si tiene menos de 5 competidores.", 
+            "link":""}
+    ],
+    "duranteIntro":"",
+    "listDurante": [
+        "Los equipos deberán estar listos en cada competencia, una vez que un equipo sea llamado, tendrá 2 minutos para presentarse. Transcurrido ese tiempo, automáticamente perderá esa contienda.",
+        "Las características de los robots y las reglas de competencia se definen de manera independiente para cada una de las categorías.",
+        "Antes de comenzar el concurso se comprobará que los prototipos cumplan con las especificaciones para la prueba.",
+        "Los jueces serán designados por el comité organizador.",
+        "Será responsabilidad de los jueces evaluar cualquier situación no considerada en las bases y reglas del concurso.",
+        "Las decisiones de los jueces serán inapelables."
+    ],
+
+    "byrIntro":"",
+    "listByR": [
+        {
+            "item":"Descargar Reglamento - Proyectos integradores ",
+            "link":"https://www.utm.mx/Semana_EyM/formatos/Reglamento_Prototipos.pdf"},
+        {
+            "item":"Descargar Reglamento - Robot de laberinto ",
+            "link":"https://www.utm.mx/Semana_EyM/formatos/Reglamento_Laberinto.pdf"},
+        {
+            "item":"Descargar Reglamento - Mini-sumo           ",
+            "link":"https://www.utm.mx/Semana_EyM/formatos/Reglamento_Minisumo.pdf"}
+    ],
+    "listPremios": [
+        "Todos los concursantes recibirán constancias individuales de participación. Se entregarán en los horarios destinados para ello.",
+        "Se premiarán los tres primeros lugares de cada categoría con las siguientes cantidades:"
+    ],
+    "premioPrimerLugar":"$ 3000.00 MXN",
+    "premioSegundoLugar":"$ 1500.00 MXN",
+    "premioTercerLugar":"Regalos con valor superior a $ 500.00",
+    "programaActividades": "Todas las actividades se realizarán en el auditorio de la Universidad Tecnológica de la Mixteca. A un costado del mismo se tendrá un espacio para pruebas y recarga de baterías. En el espacio del escenario sólo estarán los equipos mientras realizan sus pruebas eliminatorias o en las competencias finales.",
+    "actividadesHorario": [
+      {
+        "horario":"9:30 - 10:30 " , 
+        "titulo":"Titulo de conferencia/taller/Concurso 1"},
+      {
+        "horario":"10:30 - 11:00",  
+        "titulo":"Titulo de conferencia/taller/Concurso 2"},
+      {
+        "horario":"11:00 - 11:30",  
+        "titulo":"Titulo de conferencia/taller/Concurso 3"}
+    ],
+    "fechaO": {
+        "dia":"16",
+        "mes":"6"
+    },
+    "infoElement1":"Las noticias y posibles cambios en las reglas y acontecimientos relevantes se anunciarán por medio de la página oficial de la V Semana de Electrónica y Mecatrónica y la página del evento en",
+    "infoElement2":"Los organizadores y otros vinculados al desarrollo del concurso no se responsabilizarán por daños, pérdidas u otros perjuicios a las herramientas y robot, que en forma accidental o no se pueda provocar en el evento"
+}

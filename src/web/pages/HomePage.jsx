@@ -12,6 +12,7 @@ import HomeRepairServiceIcon from '@mui/icons-material/HomeRepairService';
 import { InfoEvent } from "../../interface/Cards/InfoEvent";
 import { Box } from "@mui/system";
 import { ListIconText } from "../../interface/Lists/ListIconText";
+//import { useGetInformation } from "../../hooks/useGetInformation";
 //import { ImageTextIcon } from "../../interface/ImageTextIcon/ImageTextIcon";
 
 const invitacion = "La Universidad Tecnológica de la Mixteca a través del Instituto de Electrónica y Mecatrónica invitan a la: "
@@ -19,9 +20,15 @@ const titleSemana = "VII SEMANA DE ELECTRONICA Y MECATRONICA";
 const inter1 = "que tendrá lugar en: "
 const fecha = "26 al 28 de Abril de 2023"
 const inter2 = "en las instalaciones de la misma institución: Carretera a Acatlima km. 2.5, Huajuapan de León, Oaxaca.";
-const inter3 = "Durante la VI Semana de Electrónica y Mecatrónica se tendrán las siguientes actividades:";
+const inter3 = "Durante la VII Semana de Electrónica y Mecatrónica se tendrán las siguientes actividades:";
 
 export const HomePage = () => {
+
+  //const  {getInformation} = useGetInformation('home')
+
+  //getInformation()
+
+
   return (
     <>
     <WebLayout/>

@@ -62,7 +62,7 @@ const talleresList = [
       'Uso del protoboard'
     ],
     'Dr. Edgardo Yescas Mendoza',
-    ' Sala de cómputo (Número de sala por definir)',
+    ' Sala de cómputo 1',
     20
   ),
   createTaller(
@@ -79,7 +79,7 @@ const talleresList = [
       'No se requiere conocimiento previo alguno.',
     ],
     'Dr. Alberto Antonio García',
-    'Sala de cómputo (Número de sala por definir)',
+    'Sala de cómputo 2',
     30
   ),
   createTaller(
@@ -96,7 +96,7 @@ const talleresList = [
       'No se requiere conocimiento previo alguno.',
     ],
     'Dr. José Gabriel Mendoza Larios',
-    'Sala de cómputo (Número de sala por definir)',
+    'Sala de cómputo 3',
     25
   ),
   createTaller(
@@ -116,7 +116,7 @@ const talleresList = [
     ],
     'Ing. Mario Enrique Herrera Cordero',
     'Laboratorio de electrónica analógica',
-    20
+    14
   ),
   createTaller(
     'TALLER 6. SIMULACIÓN DE SISTEMAS MECATRÓNICOS UTILIZANDO EL PROGRAMA MSC ADAMS VIEW™ ',
@@ -135,10 +135,9 @@ const talleresList = [
       'Manejo de lectura en inglés'
     ],
     'Dra. Esther Lugo González',
-    'Sala de cómputo (Número de sala por definir)',
+    'Sala de cómputo 4',
     20
   ),
-
 
 ] 
 

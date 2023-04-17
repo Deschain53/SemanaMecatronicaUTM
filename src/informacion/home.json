@@ -1,3 +1,21 @@
 {
-  
+    "invitacion": "La Universidad Tecnológica de la Mixteca a través del Instituto de Electrónica y Mecatrónica invitan a la: ",
+    "titleSemana": "VII SEMANA DE ELECTRONICA Y MECATRONICA",
+    "inter1": "que tendrá lugar en: ",
+    "fecha": "26 al 28 de Abril de 2023",
+    "inter2": "en las instalaciones de la misma institución: Carretera a Acatlima km. 2.5, Huajuapan de León, Oaxaca.",
+    "inter3": "Durante la VI Semana de Electrónica y Mecatrónica se tendrán las siguientes actividades:",
+    "itemConferencias": { 
+        "titulo":"Conferencias",
+        "descripcion":"Un ciclo de Conferencias para divulgar los resultados de la investigación aplicada en las áreas de Electrónica y Mecatrónica. Investigación que se realiza en nuestra universidad y en otros centros del país."
+    },
+    "itemConcursos": { 
+        "titulo":"Concursos",
+        "descripcion":"El 11º Concurso de Minirobótica, en donde los participantes podrán integrar conocimiento y habilidades, de manera divertida, creativa e innovadora."
+    },
+    "itemTalleres": { 
+        "titulo":"Talleres",
+        "descripcion":"Una serie de Talleres para promover e incentivar el conocimiento relacionado con las ingenierías en Electrónica y Mecatrónica, motivando a estudiantes, profesionistas y aficionados para la adquisición de nuevas habilidades."
+    }
 }
+

@@ -19,9 +19,10 @@ import { TitleSection } from "../../interface/Typo/TitleSection";
 import { DownloadList } from "../../interface/Lists/DownloadList";
 import { TypoLink } from "../../interface/Typo/TypoLink";
 import { SimpleEventList } from "../../interface/Schedule/SimpleEventList";
+import { Schedule } from "../../interface/Schedule/Schedule";
 
-function createData(horario = '9:00 -10:00', titulo,  ) {
-  return { horario, titulo, };
+function createData(horario = '9:00',  titulo, autor='Auditorio UTM', universidad='' ) {
+  return { horario, autor, titulo, universidad };
 }
 
 //Informacion con la que rellenar la pagina: ----------------------------------------------
@@ -54,7 +55,7 @@ const listDurante = [
 
 const byrIntro = '';
 const listByR = [
-  {item:'Descargar Reglamento - Proyectos integradores ',link:''},
+  {item:'Descargar Reglamento - Prototipos ',link:'https://www.utm.mx/Semana_EyM/formatos/Reglamento_Prototipos.pdf'},
   {item:'Descargar Reglamento - Robot de laberinto ',link:'https://www.utm.mx/Semana_EyM/formatos/Reglamento_Laberinto.pdf'},
   {item:'Descargar Reglamento - Mini-sumo           ',link:'https://www.utm.mx/Semana_EyM/formatos/Reglamento_Minisumo.pdf'},
 ]
@@ -67,16 +68,24 @@ const listPremios = [
 
 //Programa de actividades
 const programaActividades = 'Todas las actividades se realizarán en el auditorio de la Universidad Tecnológica de la Mixteca. A un costado del mismo se tendrá un espacio para pruebas y recarga de baterías. En el espacio del escenario sólo estarán los equipos mientras realizan sus pruebas eliminatorias o en las competencias finales.'
-const actividadesHorario = [
-  createData('9:30 - 10:30' , 'Titulo de conferencia/taller/Concurso 1',),
-  createData('10:30 - 11:00', 'Titulo de conferencia/taller/Concurso 2',),
-  createData('11:00 - 11:30', 'Titulo de conferencia/taller/Concurso 3',),
-];
+const actividadesDia1 = [
+  createData('8:00 - 10:00'  , 'Registro de Competidores del XI Concurso de Mini Robótica', 'Mesa de registro - Entrada UTM', ''),
+  createData('8:30 - 9:30'   , 'Exhibición del vehículo eléctrico', 'Explanada frente al auditorio', ''),
+  createData('9:30 - 10:00'  , 'Inauguración de la VII Semana de Electrónica y Mecatrónica y  11° Concurso de Mini Robótica', 'Auditorio UTM', ''),
+  createData('10:00 - 12:00' , 'Ronda eliminatoria de Robot de Laberinto', 'Auditorio UTM', ''),
+  createData('12:00 - 14:00' , 'Ronda eliminatoria de Mini Sumo', 'Auditorio UTM', ''),
+  createData('14:00 - 16:00' , 'Comida', '', ''),
+  createData('17:00 - 17:45' , 'Ronda final de Robot de Laberinto', 'Auditorio UTM', ''),
+  createData('17:45 - 18:30' , 'Ronda final de Mini Sumo', 'Auditorio UTM', ''),
+  createData('16:00 - 18:30' , 'Concurso de Prototipos', 'Parte alta de la cafetería', ''),
+]
+const actividadesHorario = [{fecha:{dia:26,mes:4}, conferencias: actividadesDia1}]
+
 const fechaO = {dia:16,mes:6}
 
 //Informacion adicional
-const infoElement1 = 'Las noticias y posibles cambios en las reglas y acontecimientos relevantes se anunciarán por medio de la página oficial de la V Semana de Electrónica y Mecatrónica y la página del evento en '
-const infoElement2 = "Los organizadores y otros vinculados al desarrollo del concurso no se responsabilizarán por daños, pérdidas u otros perjuicios a las herramientas y robot, que en forma accidental o no se pueda provocar en el evento."
+const infoElement1 = 'Las noticias y posibles cambios en las reglas y acontecimientos relevantes se anunciarán por medio de la página oficial de la VII Semana de Electrónica y Mecatrónica y la página del evento en '
+const infoElement2 = "Los organizadores y otros vinculados al desarrollo del concurso no se responsabilizarán por daños, pérdidas u otros perjuicios a las herramientas y robot, que en forma accidental se pueda provocar en el evento."
 
 
 export const Contest = () => {
@@ -95,7 +104,7 @@ export const Contest = () => {
         <Typography variant='h6' sx={{pt:2, fontWeight:'700'}}>{intro1}</Typography>
 
         <Box container>
-          <ListIconText Icon={EngineeringIcon} texto='Proyectos integradores'/>
+          <ListIconText Icon={EngineeringIcon} texto='Prototipos'/>
           <ListIconText Icon={BorderOuterIcon} texto='Robot Laberinto'/>
           <ListIconText Icon={SmartToyIcon} texto='Mini-sumo'/>
         </Box>
@@ -128,10 +137,8 @@ export const Contest = () => {
 
         <Subsection text="Programa de actividades"/>
           <Typography align='justify'>{programaActividades}</Typography>
-        {/*  <SimpleEventList  fecha ={fechaO} eventos = {actividadesHorario}/>
-        */ 
-          //
-        }
+          <Schedule titulo='' infoConferencias = {actividadesHorario}/> 
+
 
         <Subsection text="Información adicional"/>
           <Box container>
@@ -139,7 +146,7 @@ export const Contest = () => {
                   <Typography variant='body' align='justify' sx={{paddingTop: 0.5, fontSize:'0.9em'}}  > 
                     &bull; {infoElement1} 
                   </Typography>
-                  <TypoLink text='Facebook' link='https://www.facebook.com/Departamento-de-Servicios-Escolares-UTM-120820888621597'/>
+                  <TypoLink text='Facebook' link='https://www.facebook.com/profile.php?id=100057444708199'/>
               </Grid>
               <Grid container>
                   <Typography variant='body' align='justify' sx={{paddingTop: 0.5, fontSize:'0.9em'}}  > 
